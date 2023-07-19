@@ -45,6 +45,7 @@
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.Size = new System.Drawing.Size(271, 20);
             this.txbUsuario.TabIndex = 0;
+            this.txbUsuario.TextChanged += new System.EventHandler(this.txbUsuario_TextChanged);
             // 
             // contextMenuStrip1
             // 
@@ -110,6 +111,7 @@
             this.BtnAcessar.TabIndex = 7;
             this.BtnAcessar.Text = "Acessar";
             this.BtnAcessar.UseVisualStyleBackColor = false;
+            this.BtnAcessar.Click += new System.EventHandler(this.BtnAcessar_Click);
             // 
             // frmLogin
             // 
@@ -126,6 +128,7 @@
             this.Controls.Add(this.txbUsuario);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -102,6 +102,10 @@
       <Project>{12676ce4-e10a-4b28-b25a-f654ffd33b6a}</Project>
       <Name>AC.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AC.DAL\AC.DAL.csproj">
+      <Project>{c3108b40-8af2-4b97-9b7a-cd6713b6f696}</Project>
+      <Name>AC.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AC.Domain\AC.Domain.csproj">
       <Project>{ccdd1f48-26c0-49f9-91bb-024c369477f6}</Project>
       <Name>AC.Domain</Name>

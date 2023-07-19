@@ -89,7 +89,7 @@ namespace AC.DAL
             {
 
                 //Abrir Conexão
-                FecharConexao();
+                AbrirConexao();
                 //Criar o comando que vai levar a informação/Ação para o banco 
                 SqlCommand sqlCommand = sqlConnection.CreateCommand();
                 //Inserindo dados dentro do comando que irá ao banco 

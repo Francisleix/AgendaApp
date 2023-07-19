@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AC.Domain
 {
-    class Contato
+   public class Contato
     {
         public int ID { get; set; }
 

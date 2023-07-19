@@ -7,13 +7,13 @@ using System.Web.UI.WebControls;
 
 namespace AC.Domain
 {
-    class Usuario
+    public class Usuario
     {
         public int ID { get; set; }
 
         public string Password { get; set; }
 
-        public int MyProperty { get; set; }
+        public string UserName { get; set; }
 
         public bool Status { get; set; }
 

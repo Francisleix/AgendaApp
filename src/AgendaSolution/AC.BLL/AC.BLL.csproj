@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContatoBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AC.DAL\AC.DAL.csproj">

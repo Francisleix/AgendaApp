@@ -26,8 +26,8 @@ namespace AC.DAL.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=DizimoDB;Persist Security Info=True;User ID" +
-            "=FXAdmin;Password=dev010203")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost;Initial Catalog=AgendaApp;Persist Security Info=True;User I" +
+            "D=FXAdmin;Password=dev010203")]
         public string SQLConexaoDB {
             get {
                 return ((string)(this["SQLConexaoDB"]));
