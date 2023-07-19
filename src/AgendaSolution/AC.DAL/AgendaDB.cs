@@ -7,7 +7,7 @@ using System.Runtime;
 
 namespace AC.DAL
 {
-    public class DizimoDB
+    public class AgendaDB
     {
         //Criar Conexão com o Banco 
         SqlConnection sqlConnection = CriaConexaoSQLServer();
