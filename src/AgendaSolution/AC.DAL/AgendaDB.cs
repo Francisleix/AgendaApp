@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AC.DAL.Properties;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Runtime;
