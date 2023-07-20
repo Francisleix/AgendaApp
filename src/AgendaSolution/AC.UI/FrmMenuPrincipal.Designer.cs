@@ -56,6 +56,7 @@ namespace AC.UI
             this.btnCadastrar_Endereco.TabIndex = 1;
             this.btnCadastrar_Endereco.Text = "Cadastrar";
             this.btnCadastrar_Endereco.UseVisualStyleBackColor = false;
+            this.btnCadastrar_Endereco.Click += new System.EventHandler(this.btnCadastrar_Endereco_Click);
             // 
             // lblAgendaApp
             // 
@@ -78,7 +79,7 @@ namespace AC.UI
             this.Controls.Add(this.btnCadastrar_Endereco);
             this.Controls.Add(this.lblMenuPrincipal);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenuPrincipal";
             this.Text = "Menu Principal";
             this.ResumeLayout(false);
