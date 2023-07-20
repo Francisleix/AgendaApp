@@ -19,7 +19,7 @@ namespace AC.UI
 
         private void btnCadastrar_Endereco_Click(object sender, EventArgs e)
         {
-            frmCadastro frmCadastro = new frmCadastro();
+            FrmCadastro frmCadastro = new FrmCadastro();
             frmCadastro.Show();
             this.Close();
         }
