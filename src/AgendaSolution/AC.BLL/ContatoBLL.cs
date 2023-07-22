@@ -24,7 +24,7 @@ namespace AC.BLL
             agendaDB.AdicionarParametros("@Status", contato.Status);
 
             string IdProcessamento = Convert.ToString(agendaDB.ExecutarManipulacao(CommandType.Text,
-            "   INSERT INTO PESSOA  " +
+            "   INSERT INTO CONTATO  " +
             "   (Nome, Email, Telefone, Status) " +
             "   VALUES (@Nome,@Email,@Telefone,@Status) " +
             "   SET @ID = @@IDENTITY; "+
