@@ -54,9 +54,9 @@ namespace AC.UI
             // dataGridView_frmCadastro
             // 
             this.dataGridView_frmCadastro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_frmCadastro.Location = new System.Drawing.Point(12, 253);
+            this.dataGridView_frmCadastro.Location = new System.Drawing.Point(118, 252);
             this.dataGridView_frmCadastro.Name = "dataGridView_frmCadastro";
-            this.dataGridView_frmCadastro.Size = new System.Drawing.Size(776, 128);
+            this.dataGridView_frmCadastro.Size = new System.Drawing.Size(550, 128);
             this.dataGridView_frmCadastro.TabIndex = 0;
             this.dataGridView_frmCadastro.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_frmCadastro_CellContentClick);
             // 
@@ -106,7 +106,7 @@ namespace AC.UI
             // 
             this.txbTelefone.Location = new System.Drawing.Point(12, 141);
             this.txbTelefone.Name = "txbTelefone";
-            this.txbTelefone.Size = new System.Drawing.Size(389, 20);
+            this.txbTelefone.Size = new System.Drawing.Size(196, 20);
             this.txbTelefone.TabIndex = 5;
             // 
             // lblNome
