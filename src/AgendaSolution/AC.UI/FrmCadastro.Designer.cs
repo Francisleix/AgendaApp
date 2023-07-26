@@ -44,7 +44,6 @@ namespace AC.UI
             this.checkBoxStatus = new System.Windows.Forms.CheckBox();
             this.txbPesquisar = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
-            this.txbID = new System.Windows.Forms.TextBox();
             this.lblContatoSelecionado = new System.Windows.Forms.Label();
             this.lblContato = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -184,7 +183,7 @@ namespace AC.UI
             this.checkBoxStatus.AutoSize = true;
             this.checkBoxStatus.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxStatus.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.checkBoxStatus.Location = new System.Drawing.Point(472, 66);
+            this.checkBoxStatus.Location = new System.Drawing.Point(442, 63);
             this.checkBoxStatus.Name = "checkBoxStatus";
             this.checkBoxStatus.Size = new System.Drawing.Size(61, 18);
             this.checkBoxStatus.TabIndex = 14;
@@ -195,7 +194,7 @@ namespace AC.UI
             // 
             this.txbPesquisar.Location = new System.Drawing.Point(118, 175);
             this.txbPesquisar.Name = "txbPesquisar";
-            this.txbPesquisar.Size = new System.Drawing.Size(389, 20);
+            this.txbPesquisar.Size = new System.Drawing.Size(236, 20);
             this.txbPesquisar.TabIndex = 15;
             this.txbPesquisar.TextChanged += new System.EventHandler(this.txbPesquisar_TextChanged);
             // 
@@ -204,25 +203,20 @@ namespace AC.UI
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblID.Location = new System.Drawing.Point(408, 47);
+            this.lblID.Location = new System.Drawing.Point(419, 64);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(17, 14);
             this.lblID.TabIndex = 18;
             this.lblID.Text = "ID";
-            // 
-            // txbID
-            // 
-            this.txbID.Location = new System.Drawing.Point(411, 64);
-            this.txbID.Name = "txbID";
-            this.txbID.Size = new System.Drawing.Size(33, 20);
-            this.txbID.TabIndex = 16;
+            this.lblID.Visible = false;
+            this.lblID.Click += new System.EventHandler(this.lblID_Click);
             // 
             // lblContatoSelecionado
             // 
             this.lblContatoSelecionado.AutoSize = true;
             this.lblContatoSelecionado.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContatoSelecionado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblContatoSelecionado.Location = new System.Drawing.Point(12, 218);
+            this.lblContatoSelecionado.Location = new System.Drawing.Point(115, 231);
             this.lblContatoSelecionado.Name = "lblContatoSelecionado";
             this.lblContatoSelecionado.Size = new System.Drawing.Size(167, 18);
             this.lblContatoSelecionado.TabIndex = 19;
@@ -233,7 +227,7 @@ namespace AC.UI
             this.lblContato.AutoSize = true;
             this.lblContato.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContato.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblContato.Location = new System.Drawing.Point(185, 218);
+            this.lblContato.Location = new System.Drawing.Point(288, 231);
             this.lblContato.Name = "lblContato";
             this.lblContato.Size = new System.Drawing.Size(66, 18);
             this.lblContato.TabIndex = 20;
@@ -262,7 +256,6 @@ namespace AC.UI
             this.Controls.Add(this.lblContato);
             this.Controls.Add(this.lblContatoSelecionado);
             this.Controls.Add(this.lblID);
-            this.Controls.Add(this.txbID);
             this.Controls.Add(this.txbPesquisar);
             this.Controls.Add(this.checkBoxStatus);
             this.Controls.Add(this.lblCadastro_De_Endereços);
@@ -278,6 +271,8 @@ namespace AC.UI
             this.Controls.Add(this.btnCasdastrar);
             this.Controls.Add(this.dataGridView_frmCadastro);
             this.Name = "FrmCadastro";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
             this.Load += new System.EventHandler(this.frmCadastro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_frmCadastro)).EndInit();
@@ -303,7 +298,6 @@ namespace AC.UI
         private System.Windows.Forms.CheckBox checkBoxStatus;
         private System.Windows.Forms.TextBox txbPesquisar;
         private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.TextBox txbID;
         private System.Windows.Forms.Label lblContatoSelecionado;
         private System.Windows.Forms.Label lblContato;
         private System.Windows.Forms.Button btnSalvar;

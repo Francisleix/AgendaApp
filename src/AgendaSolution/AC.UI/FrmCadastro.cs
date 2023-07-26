@@ -65,11 +65,11 @@ namespace AC.UI
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
             string Id = lblID.Text;
-            int IdPessoa = 0;
+            int ID = 0;
 
             if (!string.IsNullOrEmpty(Id) && Id != "ID")
             {
-                IdPessoa = Convert.ToInt32(Id);
+                ID = Convert.ToInt32(Id);
 
 
             }
@@ -170,6 +170,13 @@ namespace AC.UI
                 LimparCampos();
             }
         }
+
+        private void lblID_Click(object sender, EventArgs e)
+        {
+          
+                                   
+        }
+
     }
      
 }
