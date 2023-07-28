@@ -1,0 +1,105 @@
+﻿@using AC.Domain
+@model Contato
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="container col-lg-5">
+
+        @using (Html.BeginForm("Create", "Cadastro", FormMethod.Post, new { id = "frm-cadastro-pessoa" }))
+        {
+
+            <fieldset>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Cadastro de Pessoas</div>
+
+                        <div class="panel-body">
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-1 control-label" for="Nome">Nome <h11>*</h11></label>
+                                <div class="col-md-8">
+                                    @*<input id="Nome" name="Nome" placeholder="Digite seu nome" class="form-control input-md" required="" type="text">*@
+                                    @Html.TextBoxFor(model => model.Nome, new { @class = "form-control input-md", placeholder = "Digite seu nome", required = true })
+                                </div>
+                            </div>
+
+                            <!-- Prepended text-->
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control input-md", placeholder = "Digite seu nome", required = true })
+                                        @*<input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text">*@
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Prepended text-->
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+                                <div class="col-md-5">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                        @Html.TextBoxFor(model => model.Telefone, new { @class = "form-control input-md", placeholder = "Digite seu nome", required = true })
+                                        @*<input id="telefone" name="prependedtext" class="form-control" placeholder="(031)-9999-9999" required="" type="text">*@
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Button (Double) -->
+                            <div class="form-group">
+                                <label class="col-md-2 control-label" for="Cadastrar"></label>
+                                <div class="col-md-8">
+                                    <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+                                    <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </fieldset>
+        }
+            <div class="row col-lg-6" id="grid-contatos">
+                <table class="table table-bordered table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#ID</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            foreach (var contato in ViewBag.Contatos)
+                            {
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        @contato.Nome
+                                    </td>
+                                    <td>
+                                        @contato.Email
+                                    </td>
+                                    <td>
+                                        @contato.Telefone
+                                    </td>
+                                    @*<td>
+                                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                                            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                                            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                                    </td>*@
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</div>
+
